@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamza | Full-Stack & Software Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkbg: '#0f172a',
+                        cardbg: '#1e293b',
+                        neon: '#38bdf8',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #0f172a; color: #f8fafc; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .glow:hover { box-shadow: 0 0 15px #38bdf8; transition: 0.3s; transform: translateY(-5px); }
+    </style>
+</head>
+<body class="antialiased selection:bg-neon selection:text-darkbg">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-darkbg/90 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-white tracking-wider">HAMZA<span class="text-neon">.</span></h1>
+            <a href="#contact" class="bg-neon text-darkbg px-5 py-2 rounded-full font-bold hover:bg-white transition duration-300">Hire Me</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex flex-col justify-center items-center text-center px-4 pt-20">
+        <h2 class="text-neon font-semibold tracking-widest uppercase mb-4">Software & Web Developer</h2>
+        <h1 class="text-5xl md:text-7xl font-extrabold mb-6 text-white leading-tight">
+            I Build Modern <br> <span class="text-transparent bg-clip-text bg-gradient-to-r from-neon to-blue-600">Automated Systems</span>
+        </h1>
+        <p class="text-gray-400 max-w-2xl text-lg md:text-xl mb-10">
+            Specializing in Full-Stack Web Development, Data Extraction, and Python Automation. I turn complex problems into clean, efficient, and scalable solutions.
+        </p>
+        <div class="flex gap-4">
+            <a href="#projects" class="border border-neon text-neon px-8 py-3 rounded-full font-bold hover:bg-neon hover:text-darkbg transition duration-300">View My Work</a>
+        </div>
+        
+        <!-- Tech Stack -->
+        <div class="mt-16 flex gap-6 text-4xl text-gray-500">
+            <i class="fab fa-react hover:text-neon transition"></i>
+            <i class="fab fa-node hover:text-neon transition"></i>
+            <i class="fab fa-python hover:text-neon transition"></i>
+            <i class="fab fa-js hover:text-neon transition"></i>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-900/50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 border-l-4 border-neon pl-4 text-white">Featured Projects</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Project 1 -->
+                <div class="cardbg rounded-xl p-6 border border-gray-800 glow">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-2xl font-bold text-white">Sheespace Watchmode</h3>
+                        <i class="fas fa-video text-neon text-2xl"></i>
+                    </div>
+                    <p class="text-gray-400 mb-4">A full-stack video browsing platform featuring seamless playback and user management.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-gray-800 text-xs text-gray-300 px-3 py-1 rounded-full">React</span>
+                        <span class="bg-gray-800 text-xs text-gray-300 px-3 py-1 rounded-full">Node.js</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="cardbg rounded-xl p-6 border border-gray-800 glow">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-2xl font-bold text-white">Advanced E-Commerce Store</h3>
+                        <i class="fas fa-shopping-cart text-neon text-2xl"></i>
+                    </div>
+                    <p class="text-gray-400 mb-4">A high-performance modern storefront equipped with a secure, integrated admin panel for live product updates.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-gray-800 text-xs text-gray-300 px-3 py-1 rounded-full">React</span>
+                        <span class="bg-gray-800 text-xs text-gray-300 px-3 py-1 rounded-full">Vite</span>
+                        <span class="bg-gray-800 text-xs text-gray-300 px-3 py-1 rounded-full">Vercel</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="cardbg rounded-xl p-6 border border-gray-800 glow">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-2xl font-bold text-white">Video Extractor & Downloader</h3>
+                        <i class="fas fa-download text-neon text-2xl"></i>
+                    </div>
+                    <p class="text-gray-400 mb-4">A local extraction tool designed to parse and download video playlists via URLs, complete with a modern progress tracking frontend.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-gray-800 text-xs text-gray-300 px-3 py-1 rounded-full">Python</span>
+                        <span class="bg-gray-800 text-xs text-gray-300 px-3 py-1 rounded-full">Flask</span>
+                        <span class="bg-gray-800 text-xs text-gray-300 px-3 py-1 rounded-full">yt-dlp</span>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="cardbg rounded-xl p-6 border border-gray-800 glow">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-2xl font-bold text-white">Live Chat & Subscription Dashboard</h3>
+                        <i class="fas fa-comments text-neon text-2xl"></i>
+                    </div>
+                    <p class="text-gray-400 mb-4">A multi-admin architecture managing user interactions, frontend chat widgets, and automated subscription tracking.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-gray-800 text-xs text-gray-300 px-3 py-1 rounded-full">Node.js</span>
+                        <span class="bg-gray-800 text-xs text-gray-300 px-3 py-1 rounded-full">SQLite</span>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="cardbg rounded-xl p-6 border border-gray-800 glow">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-2xl font-bold text-white">Network & Proxy Monitor GUI</h3>
+                        <i class="fas fa-network-wired text-neon text-2xl"></i>
+                    </div>
+                    <p class="text-gray-400 mb-4">A desktop application providing live traffic graphs, real-time server ping metrics, and an automated process killer.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-gray-800 text-xs text-gray-300 px-3 py-1 rounded-full">Python</span>
+                        <span class="bg-gray-800 text-xs text-gray-300 px-3 py-1 rounded-full">CustomTkinter</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="max-w-3xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6 text-white">Ready to Automate Your Workflow?</h2>
+            <p class="text-gray-400 mb-8">Whether you need a full-stack web application, a custom data scraper, or a script to fix an annoying bug, I'm ready to help.</p>
+            <a href="mailto:your-email@example.com" class="inline-block bg-neon text-darkbg px-8 py-4 rounded-full font-bold text-lg hover:bg-white transition duration-300 shadow-[0_0_15px_#38bdf8]">
+                <i class="fas fa-envelope mr-2"></i> Let's Talk
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-800 py-8 text-center text-gray-500">
+        <p>&copy; 2026 Hamza. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
