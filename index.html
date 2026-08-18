@@ -3,130 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hamza | Full-Stack & Software Developer</title>
+    <title>Hamza | Full-Stack & Automation Developer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'], mono: ['Fira Code', 'monospace'] },
                     colors: {
-                        darkbg: '#0f172a',
-                        cardbg: '#1e293b',
-                        neon: '#38bdf8',
+                        brandbg: '#09090b', /* Ultra dark minimalist background */
+                        surface: '#18181b',
+                        accent: '#3b82f6', /* Professional blue */
+                        whatsapp: '#25D366'
                     }
                 }
             }
         }
     </script>
     <style>
-        body { background-color: #0f172a; color: #f8fafc; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        .glow:hover { box-shadow: 0 0 15px #38bdf8; transition: 0.3s; transform: translateY(-5px); }
+        body { background-color: #09090b; color: #f4f4f5; }
+        .glass-panel { background: rgba(24, 24, 27, 0.6); backdrop-filter: blur(12px); border: 1px solid rgba(63, 63, 70, 0.4); }
+        .hover-lift:hover { transform: translateY(-4px); transition: all 0.3s ease; border-color: #3b82f6; }
     </style>
 </head>
-<body class="antialiased selection:bg-neon selection:text-darkbg">
+<body class="antialiased selection:bg-accent selection:text-white relative">
+
+    <!-- Floating WhatsApp Button (High Conversion) -->
+    <a href="https://wa.me/212770218199" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-50 bg-whatsapp text-white p-4 rounded-full shadow-[0_0_20px_rgba(37,211,102,0.4)] hover:scale-110 transition-transform duration-300 flex items-center justify-center group">
+        <i class="fab fa-whatsapp text-3xl"></i>
+        <span class="absolute right-16 bg-white text-gray-900 px-3 py-1 rounded text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-lg">Chat on WhatsApp</span>
+    </a>
 
     <!-- Navbar -->
-    <nav class="fixed w-full z-50 bg-darkbg/90 backdrop-blur-md border-b border-gray-800">
-        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-            <h1 class="text-2xl font-bold text-white tracking-wider">HAMZA<span class="text-neon">.</span></h1>
-            <a href="#contact" class="bg-neon text-darkbg px-5 py-2 rounded-full font-bold hover:bg-white transition duration-300">Hire Me</a>
+    <nav class="fixed w-full z-40 glass-panel border-b-0 border-zinc-800">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-black tracking-tight text-white">
+                HAMZA<span class="text-accent">.</span>DEV
+            </div>
+            <div class="flex gap-4">
+                <a href="mailto:haoaukili@gmail.com" class="text-zinc-400 hover:text-white transition font-medium text-sm flex items-center gap-2 hidden sm:flex">
+                    <i class="fas fa-envelope"></i> haoaukili@gmail.com
+                </a>
+            </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="min-h-screen flex flex-col justify-center items-center text-center px-4 pt-20">
-        <h2 class="text-neon font-semibold tracking-widest uppercase mb-4">Software & Web Developer</h2>
-        <h1 class="text-5xl md:text-7xl font-extrabold mb-6 text-white leading-tight">
-            I Build Modern <br> <span class="text-transparent bg-clip-text bg-gradient-to-r from-neon to-blue-600">Automated Systems</span>
-        </h1>
-        <p class="text-gray-400 max-w-2xl text-lg md:text-xl mb-10">
-            Specializing in Full-Stack Web Development, Data Extraction, and Python Automation. I turn complex problems into clean, efficient, and scalable solutions.
-        </p>
-        <div class="flex gap-4">
-            <a href="#projects" class="border border-neon text-neon px-8 py-3 rounded-full font-bold hover:bg-neon hover:text-darkbg transition duration-300">View My Work</a>
-        </div>
-        
-        <!-- Tech Stack -->
-        <div class="mt-16 flex gap-6 text-4xl text-gray-500">
-            <i class="fab fa-react hover:text-neon transition"></i>
-            <i class="fab fa-node hover:text-neon transition"></i>
-            <i class="fab fa-python hover:text-neon transition"></i>
-            <i class="fab fa-js hover:text-neon transition"></i>
+    <!-- Hero Section (Focus on Value & Trust) -->
+    <section class="min-h-screen flex flex-col justify-center px-6 pt-20 relative overflow-hidden">
+        <!-- Subtle background glow -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-96 h-96 bg-accent rounded-full opacity-10 blur-[120px] pointer-events-none"></div>
+
+        <div class="max-w-4xl mx-auto text-center z-10">
+            <div class="inline-block mb-4 px-3 py-1 rounded-full border border-zinc-700 bg-zinc-800/50 text-xs font-semibold text-zinc-300 uppercase tracking-widest">
+                Available for Freelance Projects
+            </div>
+            <h1 class="text-5xl md:text-7xl font-black mb-6 leading-[1.1] tracking-tight">
+                I Build Digital Solutions That <br class="hidden md:block">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-accent">Drive Results.</span>
+            </h1>
+            <p class="text-zinc-400 text-lg md:text-xl mb-10 max-w-2xl mx-auto leading-relaxed">
+                From high-performance React applications to complex Python automation scripts. I transform technical challenges into seamless, profitable software tailored for your business.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="https://wa.me/212770218199" class="w-full sm:w-auto bg-white text-black px-8 py-4 rounded-lg font-bold text-lg hover:bg-zinc-200 transition duration-300 flex items-center justify-center gap-2 shadow-lg">
+                    <i class="fab fa-whatsapp text-whatsapp text-xl"></i> Hire Me Now
+                </a>
+                <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-lg font-semibold text-lg text-white border border-zinc-700 hover:bg-zinc-800 transition duration-300">
+                    Explore My Work
+                </a>
+            </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-20 bg-gray-900/50">
-        <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold mb-12 border-l-4 border-neon pl-4 text-white">Featured Projects</h2>
-            
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-surface border-y border-zinc-800">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="mb-16">
+                <h2 class="text-3xl font-black mb-2 text-white">Core Expertise</h2>
+                <p class="text-zinc-400">Targeted skills to scale your digital operations.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="glass-panel p-8 rounded-2xl hover-lift">
+                    <i class="fas fa-robot text-accent text-3xl mb-6"></i>
+                    <h3 class="text-xl font-bold text-white mb-3">Custom Automation</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">Python scripts to automate repetitive tasks, extract data (Web Scraping), and manage workflows effortlessly.</p>
+                </div>
+                <div class="glass-panel p-8 rounded-2xl hover-lift">
+                    <i class="fab fa-react text-accent text-3xl mb-6"></i>
+                    <h3 class="text-xl font-bold text-white mb-3">Full-Stack Web Apps</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">End-to-end web applications built with React and Node.js. Fast, secure, and fully customized to your needs.</p>
+                </div>
+                <div class="glass-panel p-8 rounded-2xl hover-lift">
+                    <i class="fas fa-store text-accent text-3xl mb-6"></i>
+                    <h3 class="text-xl font-bold text-white mb-3">E-Commerce Solutions</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">Modern storefronts and administrative dashboards designed for high conversion and easy product management.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Selected Work Section -->
+    <section class="py-24">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="mb-16">
+                <h2 class="text-3xl font-black mb-2 text-white">Selected Projects</h2>
+                <p class="text-zinc-400">Production-ready applications and software systems.</p>
+            </div>
+
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 
-                <!-- Project 1 -->
-                <div class="cardbg rounded-xl p-6 border border-gray-800 glow">
-                    <div class="flex justify-between items-start mb-4">
-                        <h3 class="text-2xl font-bold text-white">Sheespace Watchmode</h3>
-                        <i class="fas fa-video text-neon text-2xl"></i>
+                <!-- Project Item -->
+                <div class="glass-panel p-8 rounded-2xl flex flex-col justify-between hover-lift group">
+                    <div>
+                        <div class="flex justify-between items-start mb-6">
+                            <h3 class="text-2xl font-bold text-white group-hover:text-accent transition-colors">Advanced E-Commerce Platform</h3>
+                        </div>
+                        <p class="text-zinc-400 mb-6 leading-relaxed">A high-performance modern storefront built with React and Vite. Features a highly secure, custom-integrated admin panel for real-time inventory and order management.</p>
                     </div>
-                    <p class="text-gray-400 mb-4">A full-stack video browsing platform featuring seamless playback and user management.</p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-gray-800 text-xs text-gray-300 px-3 py-1 rounded-full">React</span>
-                        <span class="bg-gray-800 text-xs text-gray-300 px-3 py-1 rounded-full">Node.js</span>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="cardbg rounded-xl p-6 border border-gray-800 glow">
-                    <div class="flex justify-between items-start mb-4">
-                        <h3 class="text-2xl font-bold text-white">Advanced E-Commerce Store</h3>
-                        <i class="fas fa-shopping-cart text-neon text-2xl"></i>
-                    </div>
-                    <p class="text-gray-400 mb-4">A high-performance modern storefront equipped with a secure, integrated admin panel for live product updates.</p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-gray-800 text-xs text-gray-300 px-3 py-1 rounded-full">React</span>
-                        <span class="bg-gray-800 text-xs text-gray-300 px-3 py-1 rounded-full">Vite</span>
-                        <span class="bg-gray-800 text-xs text-gray-300 px-3 py-1 rounded-full">Vercel</span>
+                    <div class="flex flex-wrap gap-2 mt-auto">
+                        <span class="bg-zinc-800 border border-zinc-700 text-xs text-zinc-300 px-3 py-1 rounded-md font-mono">React</span>
+                        <span class="bg-zinc-800 border border-zinc-700 text-xs text-zinc-300 px-3 py-1 rounded-md font-mono">Node.js</span>
                     </div>
                 </div>
 
-                <!-- Project 3 -->
-                <div class="cardbg rounded-xl p-6 border border-gray-800 glow">
-                    <div class="flex justify-between items-start mb-4">
-                        <h3 class="text-2xl font-bold text-white">Video Extractor & Downloader</h3>
-                        <i class="fas fa-download text-neon text-2xl"></i>
+                <!-- Project Item -->
+                <div class="glass-panel p-8 rounded-2xl flex flex-col justify-between hover-lift group">
+                    <div>
+                        <div class="flex justify-between items-start mb-6">
+                            <h3 class="text-2xl font-bold text-white group-hover:text-accent transition-colors">Media Extractor API & GUI</h3>
+                        </div>
+                        <p class="text-zinc-400 mb-6 leading-relaxed">A robust Python-based tool utilizing yt-dlp to parse and download large media playlists. Includes a modern frontend progress tracker and seamless local execution.</p>
                     </div>
-                    <p class="text-gray-400 mb-4">A local extraction tool designed to parse and download video playlists via URLs, complete with a modern progress tracking frontend.</p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-gray-800 text-xs text-gray-300 px-3 py-1 rounded-full">Python</span>
-                        <span class="bg-gray-800 text-xs text-gray-300 px-3 py-1 rounded-full">Flask</span>
-                        <span class="bg-gray-800 text-xs text-gray-300 px-3 py-1 rounded-full">yt-dlp</span>
-                    </div>
-                </div>
-
-                <!-- Project 4 -->
-                <div class="cardbg rounded-xl p-6 border border-gray-800 glow">
-                    <div class="flex justify-between items-start mb-4">
-                        <h3 class="text-2xl font-bold text-white">Live Chat & Subscription Dashboard</h3>
-                        <i class="fas fa-comments text-neon text-2xl"></i>
-                    </div>
-                    <p class="text-gray-400 mb-4">A multi-admin architecture managing user interactions, frontend chat widgets, and automated subscription tracking.</p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-gray-800 text-xs text-gray-300 px-3 py-1 rounded-full">Node.js</span>
-                        <span class="bg-gray-800 text-xs text-gray-300 px-3 py-1 rounded-full">SQLite</span>
+                    <div class="flex flex-wrap gap-2 mt-auto">
+                        <span class="bg-zinc-800 border border-zinc-700 text-xs text-zinc-300 px-3 py-1 rounded-md font-mono">Python</span>
+                        <span class="bg-zinc-800 border border-zinc-700 text-xs text-zinc-300 px-3 py-1 rounded-md font-mono">Flask</span>
                     </div>
                 </div>
 
-                <!-- Project 5 -->
-                <div class="cardbg rounded-xl p-6 border border-gray-800 glow">
-                    <div class="flex justify-between items-start mb-4">
-                        <h3 class="text-2xl font-bold text-white">Network & Proxy Monitor GUI</h3>
-                        <i class="fas fa-network-wired text-neon text-2xl"></i>
+                <!-- Project Item -->
+                <div class="glass-panel p-8 rounded-2xl flex flex-col justify-between hover-lift group">
+                    <div>
+                        <div class="flex justify-between items-start mb-6">
+                            <h3 class="text-2xl font-bold text-white group-hover:text-accent transition-colors">Network Proxy Monitor</h3>
+                        </div>
+                        <p class="text-zinc-400 mb-6 leading-relaxed">A desktop application providing live traffic visualization, automated resource management, and real-time server latency metrics to ensure absolute uptime.</p>
                     </div>
-                    <p class="text-gray-400 mb-4">A desktop application providing live traffic graphs, real-time server ping metrics, and an automated process killer.</p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-gray-800 text-xs text-gray-300 px-3 py-1 rounded-full">Python</span>
-                        <span class="bg-gray-800 text-xs text-gray-300 px-3 py-1 rounded-full">CustomTkinter</span>
+                    <div class="flex flex-wrap gap-2 mt-auto">
+                        <span class="bg-zinc-800 border border-zinc-700 text-xs text-zinc-300 px-3 py-1 rounded-md font-mono">Python</span>
+                        <span class="bg-zinc-800 border border-zinc-700 text-xs text-zinc-300 px-3 py-1 rounded-md font-mono">CustomTkinter</span>
+                    </div>
+                </div>
+
+                <!-- Project Item -->
+                <div class="glass-panel p-8 rounded-2xl flex flex-col justify-between hover-lift group">
+                    <div>
+                        <div class="flex justify-between items-start mb-6">
+                            <h3 class="text-2xl font-bold text-white group-hover:text-accent transition-colors">Subscription Dashboard & Live Chat</h3>
+                        </div>
+                        <p class="text-zinc-400 mb-6 leading-relaxed">A scalable multi-admin architecture managing real-time user interactions, dynamic frontend chat widgets, and automated tracking via SQLite.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mt-auto">
+                        <span class="bg-zinc-800 border border-zinc-700 text-xs text-zinc-300 px-3 py-1 rounded-md font-mono">Node.js</span>
+                        <span class="bg-zinc-800 border border-zinc-700 text-xs text-zinc-300 px-3 py-1 rounded-md font-mono">SQLite</span>
                     </div>
                 </div>
 
@@ -134,20 +176,26 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-20">
-        <div class="max-w-3xl mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold mb-6 text-white">Ready to Automate Your Workflow?</h2>
-            <p class="text-gray-400 mb-8">Whether you need a full-stack web application, a custom data scraper, or a script to fix an annoying bug, I'm ready to help.</p>
-            <a href="mailto:your-email@example.com" class="inline-block bg-neon text-darkbg px-8 py-4 rounded-full font-bold text-lg hover:bg-white transition duration-300 shadow-[0_0_15px_#38bdf8]">
-                <i class="fas fa-envelope mr-2"></i> Let's Talk
-            </a>
+    <!-- Direct Contact CTA -->
+    <section class="py-24 bg-surface border-t border-zinc-800">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-black mb-6 text-white">Let's Build Something Great.</h2>
+            <p class="text-zinc-400 mb-10 text-lg">Stop wasting time on manual tasks or struggling with bugs. Get in touch today and let's get your project shipped.</p>
+            
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-6">
+                <a href="https://wa.me/212770218199" class="w-full sm:w-auto bg-whatsapp text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-green-500 transition duration-300 flex items-center justify-center gap-3">
+                    <i class="fab fa-whatsapp text-2xl"></i> +212 770 218 199
+                </a>
+                <a href="mailto:haoaukili@gmail.com" class="w-full sm:w-auto glass-panel text-white px-8 py-4 rounded-lg font-bold text-lg hover:border-accent hover:text-accent transition duration-300 flex items-center justify-center gap-3">
+                    <i class="fas fa-envelope text-xl"></i> haoaukili@gmail.com
+                </a>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="border-t border-gray-800 py-8 text-center text-gray-500">
-        <p>&copy; 2026 Hamza. All rights reserved.</p>
+    <footer class="py-8 text-center text-zinc-600 text-sm">
+        <p>&copy; 2026 Hamza. Developed with precision.</p>
     </footer>
 
 </body>
